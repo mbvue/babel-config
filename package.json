@@ -1,0 +1,37 @@
+{
+    "name": "@mbvue/babel-preset-config",
+    "version": "0.0.2",
+    "description": "babel preset config",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbvue/babel-preset-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mbvue/babel-preset-config/issues"
+    },
+    "homepage": "https://github.com/mbvue/babel-preset-config#readme",
+    "keywords": [
+        "babel",
+        "babel preset",
+        "babel preset config",
+        "mb",
+        "mbvue"
+    ],
+    "author": "hwq <17031989083@qq.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.12.3",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-export-default-from": "^7.12.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+        "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-transform-object-assign": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.1",
+        "@babel/preset-env": "^7.12.1",
+        "@vue/babel-plugin-jsx": "^1.0.0-rc.3",
+        "lodash.merge": "^4.6.2"
+    }
+}
