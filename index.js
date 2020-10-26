@@ -36,8 +36,8 @@ module.exports = function (api, opts) {
     let plugins = [];
 
     if(opts.vue && opts.vue * 1 == 2){
-        presets.push('@vue/babel-preset-jsx'); //vue2 Jsx 预设
-        presets.push('@babel/preset-typescript'); //vue2 TypeScript 预设
+        presets.push(require.resolve('@vue/babel-preset-jsx')); //vue2 Jsx 预设
+        presets.push(require.resolve('@babel/preset-typescript')); //vue2 TypeScript 预设
     } else {
         plugins.push(require.resolve('@vue/babel-plugin-jsx')); //Vue3 Jsx TypeScript 转换插件
     }
