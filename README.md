@@ -1,8 +1,7 @@
-## Vendor
-Babel Preset Config.
-
 ## Installation
 ```bash
+npm install --save-dev @mbvue/babel-preset-config
+#OR
 yarn add -D @mbvue/babel-preset-config
 ```
 
@@ -10,33 +9,46 @@ yarn add -D @mbvue/babel-preset-config
 babel.config.js：
 
 ```js
-//Vue3
 module.exports = {
   presets: ['@mbvue/babel-preset-config']
 };
 
 #OR
 
-//Vue2
 module.exports = {
-  presets: [['@mbvue/babel-preset-config', { vue: 2 }]]
+  presets: [
+    ['@mbvue/babel-preset-config', { env: { useBuiltIns: "entry" } }]
+  ]
 };
+```
+
+package.json：
+
+```json
+"babel": {
+  "presets": [
+    "@mbvue/babel-preset-config"
+  ]
+}
 ```
 
 Use Function：
 ```js
-import BabelPresetConfig from '@mbvue/babel-preset-config';
+import babelPresetConfig from '@mbvue/babel-preset-config';
 
-let modules = false;
-
-BabelPresetConfig(modules);
-
-#OR
-
-BabelPresetConfig(modules, { vue: 2 });
+babelPresetConfig({ env: { useBuiltIns: "entry" } });
 ```
 
-## Browsers
-```js
-require('@mbvue/babel-preset-config/browsers')
-```
+## Options
+#### env
+@babel/preset-env options
+
+#### jsx
+If vue version is 2：@babel/babel-preset-jsx options
+If vue version is 3：@babel/babel-plugin-jsx options
+
+#### typescript
+@babel/preset-typescript options
+
+#### runtime
+@babel/plugin-transform-runtime options
