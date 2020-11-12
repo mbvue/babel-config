@@ -1,6 +1,6 @@
 {
     "name": "@mbvue/babel-preset-config",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "babel preset config",
     "main": "index.js",
     "repository": {
@@ -31,6 +31,6 @@
         "@babel/preset-typescript": "^7.12.1",
         "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
         "@vue/babel-plugin-jsx": "^1.0.0-rc.3",
-        "@vue/babel-preset-jsx": "^1.2.3"
+        "@vue/babel-preset-jsx": "^1.2.4"
     }
 }
