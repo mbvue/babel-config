@@ -1,6 +1,6 @@
 {
     "name": "@mbvue/babel-preset-config",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "babel preset config",
     "main": "index.js",
     "repository": {
